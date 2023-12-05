@@ -10,6 +10,16 @@
 
 //      switch 
 
+// number
+// boolean
+// array
+// string
+// objetc
+// undefined
+// null
+
+
+
 // console.log (typeof age);
 // var months = age * 18;
 // console.log (months + " ay");
@@ -134,57 +144,129 @@
 // console.log(alphabet[number - 1]);
 
 
-// var randomPassword = "";
-// var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-// var randomIndex = Math.floor(Math.random() * 26);
-// var n = 0;
-// while (n < 8) {
-//     var randomIndex = Math.floor(Math.random() * 26);
-//     console.log(alphabet);
-//     n++;
-// }
-
-
-
-
-
-// var surnames = ["Abdullayev", "Quliyev", "Hüseynov", "Mammadov", "Aliyev", "Rzayev",
-// "Suleymanov", "Ahmadov", "Mustafayev", "Abbasov", "İsmayilov",  "Əsədova", "İbrahimova", "Hüseynova", "Məmmədova", "Quliyeva",
-// "Rzayeva", "Soltanova", "Allahverdiyeva", "Səfərova", "Mustafayeva"];
-// var names = ["Nəriman", "Elçin", "Şamil", "Rəşad", "Cavid",
-// "Fərid", "İlham", "Cəmil", "Murad", "Taleh", "Günel", "Leyla", "Aysel", "Nigar", "Sevinc",
-// "Narmin", "Aylin", "Röya", "Feride", "Vafa"];
-// var randomIndex = Math.floor
-
-
-
 // Math.round normal
 // Math.floor asagi
 // Math.ceil yuxari
 
 
+// var names = [
+//     {
+//         name: "Nəriman",
+//         gender: "male"
+//     },
+//     {
+//         name: "Elçin",
+//         gender: "male"
+//     },
+//     {
+//         name: "Tural",
+//         gender: "male"
+//     },
+//     {
+//         name: "Rəşad",
+//         gender: "male"
+//     },
+//     {
+//         name: "Cavid",
+//         gender: "male"
+//     },
+//     {
+//         name: "Fərid",
+//         gender: "male"
+//     },
+//     {
+//         name: "İlham",
+//         gender: "male"
+//     },
+//     {
+//         name: "Rövşən",
+//         gender: "male"
+//     },
+//     {
+//         name: "Murad",
+//         gender: "male"
+//     },
+//     {
+//         name: "Röya",
+//         gender: "female"
+//     },
+//     {
+//         name: "Leyla",
+//         gender: "female"
+//     },
+//     {
+//         name: "Nuranə",
+//         gender: "female"
+//     },
+//     {
+//         name: "Nigar",
+//         gender: "female"
+//     },
+//     {
+//         name: "Nərmin",
+//         gender: "female"
+//     },
+//     {
+//         name: "Aylin",
+//         gender: "female"
+//     },
+//     {
+//         name: "Fəridə",
+//         gender: "female"
+//     },
+//     {
+//         name: "Vəfa",
+//         gender: "female"
+//     },
+//     {
+//         name: "Lalə",
+//         gender: "female"
+//     },
+//     {
+//         name: "Məlahət",
+//         gender: "female"
+//     },
+// ];
+// var surnames = [
+//     "Məmmədov",
+//     "Abdullayev",
+//     "Quliyev",
+//     "Hüseynov",
+//     "Əliyev",
+//     "Rzayev",
+//     "Əhmədov",
+//     "Mustafayev",
+//     "Həsənov",
+//     "Ağayev",
+//     "Nuriyev",
+//     "Rəhimov",
+//     "Kərimov",
+//     "Həmidov",
+//     "Amalov",
+//     "Mahmudov",
+//     "Hacıyev",
+//     "Rəsulov",
+//     "Məlikov",
+// ];
+
+// var randomNameIndex = Math.floor(Math.random() * 19);
+// var randomName = names[randomNameIndex].name;
+// var randomSurnameIndex = Math.floor(Math.random() * 19);
+// var randomSurname = surnames[randomSurnameIndex];
+// if (names[randomNameIndex].gender === "male") {
+//     console.log(randomSurname + " " + randomName);
+// } else {
+//     console.log(randomSurname + "a" + " " + randomName);
+// }
 
 
-var boynames = [
-    "Nəriman", "Elçin", "Tural", "Rəşad", "Cavid",
-    "Fərid", "İlham", "Rövşən", "Murad",
-];
-var boysurnames = [
-    "Quliyev", "Hüseynov", "Mammadov", "Aliyev", "Rzayev",
-    "Suleymanov", "Əhmadov", "Mustafayev", "Abbasov",
-];
-var girlnames = [
-    "Röya", "Leyla", "Aysel", "Nigar", "Sevinc",
-    "Narmin", "Aylin", "Rena", "Feride", "Vafa"
-];
-var girlsurnames = [
-    "Məmmədova", "Abdullayev", "Hüseynova", "Əsədova", "Quliyeva",
-    "Rzayeva", "İbrahimova", "Allahverdiyeva", "Səfərova", "Mustafayeva"
-]; 
-var randomboyname = Math.floor(Math.random() * boynames.length);
-var randomgirlname = Math.floor(Math.random() * girlnames.length);
-console.log(boynames[randomboyname] + " " + boysurnames[randomboyname]);
-console.log(girlnames[randomgirlname] + " " + girlsurnames[randomgirlname]);
-
-
-
+var name = prompt("Adin nedi ?");
+var length = "";
+for (let i = 0; i < name.length; i++) {
+    if (i === 0) {
+        length += name[i].toUpperCase();
+    } else{
+        length += name[i].toLowerCase();
+    }
+}
+console.log(length);

@@ -260,13 +260,22 @@
 // }
 
 
-var name = prompt("Adin nedi ?");
-var length = "";
-for (let i = 0; i < name.length; i++) {
-    if (i === 0) {
-        length += name[i].toUpperCase();
-    } else{
-        length += name[i].toLowerCase();
-    }
+// var name = prompt("Adin nedi ?");
+// var length = "";
+// for (let i = 0; i < name.length; i++) {
+//     if (i === 0) {
+//         length += name[i].toUpperCase();
+//     } else{
+//         length += name[i].toLowerCase();
+//     }
+// }
+// console.log(length);
+
+
+var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+var number = '';
+for (let i = 0; i < 8; i++) {
+  const randomIndex = Math.floor(Math.random() * alphabet.length);
+  number += alphabet[randomIndex];
 }
-console.log(length);
+console.log(number);

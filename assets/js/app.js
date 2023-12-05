@@ -275,7 +275,7 @@
 var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 var number = '';
 for (let i = 0; i < 8; i++) {
-  const randomIndex = Math.floor(Math.random() * alphabet.length);
+  var randomIndex = Math.floor(Math.random() * alphabet.length);
   number += alphabet[randomIndex];
 }
 console.log(number);

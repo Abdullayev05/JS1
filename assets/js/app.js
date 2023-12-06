@@ -25,7 +25,7 @@
 // console.log (months + " ay");
 // var age = prompt ("Neçə il ?");
 // console.log (age * 12);
-// console.log (age * 365);r
+// console.log (age * 365);
 // console.log (age * 365 * 24);
 // console.log (age * 365 * 24 * 60);
 // console.log (age * 365 * 60 * 60);
@@ -248,7 +248,6 @@
 //     "Rəsulov",
 //     "Məlikov",
 // ];
-
 // var randomNameIndex = Math.floor(Math.random() * 19);
 // var randomName = names[randomNameIndex].name;
 // var randomSurnameIndex = Math.floor(Math.random() * 19);
@@ -261,21 +260,78 @@
 
 
 // var name = prompt("Adin nedi ?");
-// var length = "";
+// var nmbr = "";
 // for (let i = 0; i < name.length; i++) {
 //     if (i === 0) {
-//         length += name[i].toUpperCase();
+//         nmbr += name[i].toUpperCase();
 //     } else{
-//         length += name[i].toLowerCase();
+//         nmbr += name[i].toLowerCase();
 //     }
 // }
-// console.log(length);
+// console.log(nmbr);
 
 
-var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-var number = '';
-for (let i = 0; i < 8; i++) {
-  var randomIndex = Math.floor(Math.random() * alphabet.length);
-  number += alphabet[randomIndex];
-}
-console.log(number);
+// var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+// var number = '';
+// for (var i = 0; i < 8; i++) {
+//   var randomIndex = Math.floor(Math.random() * alphabet.length);
+//   number += alphabet[randomIndex];
+// }
+// console.log(number);
+
+
+// 2
+// var password = 'abcdefghtnmrswqzxvhyuiop';
+// var number = '';
+// for (var i = 0; i < 6; i++) {
+//   var randomIndex = Math.floor(Math.random() * password.length);
+//   number += password[randomIndex];
+// }
+// console.log(number);
+
+// 4
+// var word = prompt("Nəsə yaz");
+// var nmbr = "";
+// for (var i = 0; i < word.length; i++) {
+//     if (i === 0) {
+//         nmbr += word.toUpperCase();
+//     } 
+// }
+// console.log(nmbr);
+
+
+// 5
+// var word = prompt("Nəsə yaz");
+// var nmbr = "";
+// for (var i = 0; i < word.length; i++) {
+//     if (i === 0) {
+//         nmbr += word.toLowerCase();
+//     } 
+// }
+// console.log(nmbr);
+
+
+// 6
+// var name = prompt("Nəsə yaz");
+// var nmbr = "";
+// for (var i = 0; i < name.length; i++) {
+//     if (i === 0) {
+//         nmbr += name[i].toUpperCase();
+//     } else{
+//         nmbr += name[i].toLowerCase();
+//     }
+// }
+// console.log(nmbr);
+
+
+// 7
+// var name = prompt("Nəsə yaz");
+// var nmbr = "";
+// for (var i = 0; i < name.length; i++) {
+//     if (i === 0) {
+//          nmbr += name[i].toLowerCase();
+//     } else{
+//         nmbr += name[i].toUpperCase();
+//     }
+// }
+// console.log(nmbr);

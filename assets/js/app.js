@@ -6,9 +6,9 @@
 // alert ("Salam" name + " " + surname)
 // console.log ("5 il sonra sizin 27 yasiniz")
 // var age = prompt("Nece yasin var?")
-// age 
+// age
 
-//      switch 
+//      switch
 
 // number
 // boolean
@@ -56,12 +56,12 @@
 // console.log(trash)
 
 
-// console.log(Math.random) 
+// console.log(Math.random)
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);
 //   }
-//   console.log(getRandomInt(3));  
-//   console.log(getRandomInt(1));  
+//   console.log(getRandomInt(3));
+//   console.log(getRandomInt(1));
 //   console.log(Math.random());
 
 
@@ -121,7 +121,7 @@
 //       statuss = true;
 //     } else {
 //       statuss = false;
-//     } 
+//     }
 //   }
 // }
 
@@ -289,13 +289,14 @@
 // }
 // console.log(number);
 
+
 // 4
 // var word = prompt("Nəsə yaz");
 // var nmbr = "";
 // for (var i = 0; i < word.length; i++) {
 //     if (i === 0) {
 //         nmbr += word.toUpperCase();
-//     } 
+//     }
 // }
 // console.log(nmbr);
 
@@ -306,7 +307,7 @@
 // for (var i = 0; i < word.length; i++) {
 //     if (i === 0) {
 //         nmbr += word.toLowerCase();
-//     } 
+//     }
 // }
 // console.log(nmbr);
 
@@ -335,3 +336,15 @@
 //     }
 // }
 // console.log(nmbr);
+
+
+// var age = prompt("Dogum ilini yaz")
+// console.log(2023 - age);
+
+
+// let sentence =  prompt("Cumle yaz")
+// sentence = sentence.trim();
+// let count = 0;
+// let words = sentence.split(" ")
+// console.log(words);
+

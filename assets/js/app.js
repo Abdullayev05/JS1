@@ -398,3 +398,43 @@
 // let cumle = prompt("Cumle yaz");
 // let words = cumle.split(/t/g).join("**");
 // console.log(words);
+
+
+// let sentence = prompt("cumle yaz")
+// let sentence2 = [];
+// sentence = sentence.split(" ");
+
+// for (let i = 0; i < sentence.length; i++) {
+//     console.log(sentence[i]);
+//     sentence2.push(sentence[i].toLowerCase().replaceAll("t", "**"))
+// }
+// console.log(sentence2);
+
+
+// const checkSadeOrMurekkeb = function (num) {
+//     for (let i = 2; i < num; i++)
+//         if (num % i === 0) {
+//             console.log("murekkebdir");
+//             return false;
+//         }
+// }
+// let number = +prompt("eded yaz");
+
+
+
+// let number = +prompt("Reqem yaz");
+// let num = 0;
+// if (typeof(number) === "number") {
+//     let numb = parseInt(number, 10) + 1;
+//     while (num < 4) {
+//         if (numb % 10 === 8) {
+//             console.log(numb);
+//             num++;
+//         }
+//         numb++;
+//     }
+// }
+
+
+
+// 4

@@ -402,8 +402,7 @@
 
 // let sentence = prompt("cumle yaz")
 // let sentence2 = [];
-// sentence = sentence.split(" ");
-
+// sentence = sentence.split(" ");\
 // for (let i = 0; i < sentence.length; i++) {
 //     console.log(sentence[i]);
 //     sentence2.push(sentence[i].toLowerCase().replaceAll("t", "**"))
@@ -437,4 +436,166 @@
 
 
 
-// 4
+// sort 
+// var arr = [15, 16, 17, 18, 19, 20];
+// arr.sort((a, b) => a - b);
+// console.log(arr);
+// (a - b) olarsa ---> array daxilnde ki reqemleri balacadan boyuye duzur 
+// (b - a) olarsa ---> array daxilnde ki reqemleri boyukden balacaya duzur 
+
+// let nmbr = [...arr] arr (arrayin) icindeki reqemleri kopyalayir
+
+// arr.push() ----> arrayin axirina reqem elave edir 
+// arr.unshift() ----> arrayin evvelline reqem elave edir
+// arr.pop() ----> arrayin axirinda ki reqemi silir
+// arr.shift() ----> arrayin evvellinde ki reqemi silir
+
+// console.log(arr.every((a) => % 2 === 0));
+// array daxilinde ki reqemler cut olmadigina gore consolda
+// false verir
+// yeni ki array daxilinde ki hersey serte uygun olmalidi
+
+// console.log(arr.some((a) => % 2 === 0));
+// array daxilinde ki reqemler cut olmadigina gore 
+// consolda false verir
+// some da ise biri duz olsa true verir
+
+// includes ----> array daxilinde meselen [17,18,19,20]
+// console.log(18);
+// console.log(21); olanda false verir
+
+// trim ---> metnin baslangic ve sonunda ki bosluqlari kesir
+
+// split ---> bosluqlari silmek ucun istifage olunur
+
+// parseInt ---> string daxilindeki yanliz reqemleri konsola cixarir
+// herf yazilsa bele reqemleri secir
+
+// +prompt ---> istifadicinin daxil edtiyi metni reqeme cevirmek ucun istifade olunur
+// herf yazanda konsolda NaN cixarir
+
+// join ---> string daxilinde ki sozleri her birini ayri ayriliqda 
+// stirng daxilinde yazanda onlari konsola bir string daxilinde cixarir
+
+// div.classList.add("") elave edir
+
+// div.classList.remove("") silir 
+
+
+// let mode = Math.floor(Math.random() * 10) + 1;
+// let reqem;
+// do {
+//     reqem = parseInt(prompt("1 ilə 10 arasında bir rəqəm daxil edin:"));
+//     if (reqem === mode) {
+//         console.log("Təbrik edirəm, doğru texmin etdiniz!");
+//     } else if (reqem < mode) {
+//         console.log("Çox kiçik!");
+//     } else {
+//         console.log("Çox böyük!");
+//     }
+// } while (reqem !== mode);
+
+
+// let number = parseInt(prompt("1 ilə 10 arasında bir rəqəm seçin:"));
+// switch (number) {
+// case 1:
+// console.log(" Uzun zaman öncə, çox uzaq bir yerlərdə...");
+// break;
+// case 2:
+// console.log("Bir ormanda, kiçik bir köyün yaxınlığında...");
+// break;
+// case 3:
+// console.log("Bir zamanlar bir kitabxanənin dəhlizində...");
+// break;
+// case 4:
+// console.log("Dərin dəhlizlər, gizli bir dünyanın açarını gizlədir.");
+// break;
+// case 5:
+// console.log("Bir dəniz kənarında, qumların içində...");
+// break;
+// case 6:
+// console.log("Bir çayın kənarında, yarpaqlar arasında...");
+// break;
+// case 7:
+// console.log("Göydə, ulduzların parıldadığı bir gecədə...");
+// break;
+// case 8:
+// console.log("Bir dənizdə, balıqların rəngarəng oyunları ilə...");
+// break;
+// case 9:
+// console.log("Bir şəhərdə, sabahın erken saatlarında...");
+// break;
+// case 10:
+// console.log("Bir tarlada, günlərin uzadığı bir vaxtda...");
+// break;
+// default:
+// console.log("Seçdiyiniz rəqəmə uyğun hekayə tapılmadı.");
+// }
+
+
+
+// let increase = document.querySelector("#increase_btn");
+// let decrease = document.querySelector("#decrease_btn");
+// let p = document.querySelector("p");
+// let count = document.querySelector("p").innerText;
+// increase.addEventListener("click", ()=>{
+//   count++;
+//   p.innerText = count;
+// });
+// decrease.addEventListener("click", ()=>{
+//   if(count > 0){
+//     count--;
+//     p.innerText = count;
+//   }
+// });
+
+
+// let time = document.querySelector("input");
+// console.log(time);
+// time.addEventListener("change",()=>{
+//   let count = 0;
+//   const time = setInterval(() => {
+//     console.log(count);
+//     count++;
+//   }, 2000);
+// })
+
+
+
+// let increase = document.querySelector("#inc");
+// let decrease = document.querySelector("#dec");
+// let count = document.querySelector("span").innerText;
+// const checkColor = () => {
+//   if (count % 2 == 0) {
+//     document.querySelector("span").classList.add("cut")
+//     document.querySelector("span").classList.remove("tek")
+//   } else {
+//     document.querySelector("span").classList.add("tek")
+//     document.querySelector("span").classList.remove("cut")
+//   }
+// };
+// increase.addEventListener("click", () => {
+//   count++;
+//   document.querySelector("span").innerText = count;
+//   checkColor();
+// });
+// decrease.addEventListener("click", () => {
+//   if (0 < count)
+//     count--;
+//   document.querySelector("span").innerText = count;
+//   checkColor();
+// });
+
+
+
+let gif = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let input = document.querySelector("input");
+let div = document.querySelector("gif_video")
+input.addEventListener("input", () => {
+  console.log(input.value);
+  if (input.value == "Saturday" || input.value == "Sunday") {
+    div.innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbmuPUAVOWB8_J7Bfu9EDAq8aLSkZzSI7tg&usqp=CAU">';
+  } else {
+    div.innerHTML = '<img src="https://media1.giphy.com/media/DYH297XiCS2Ck/200w.gif?cid=6c09b952kzmc1g6eaxfi5f658214wkn6dpgobumtiejkjwph&ep=v1_gifs_search&rid=200w.gif&ct=g">';
+  }
+});

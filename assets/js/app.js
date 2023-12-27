@@ -588,14 +588,30 @@
 
 
 
-let gif = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let gif = ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Thursday", "Saturday"];
 let input = document.querySelector("input");
-let div = document.querySelector("gif_video")
+let div = document.querySelector(".gif_video")
 input.addEventListener("input", () => {
   console.log(input.value);
-  if (input.value == "Saturday" || input.value == "Sunday") {
-    div.innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbmuPUAVOWB8_J7Bfu9EDAq8aLSkZzSI7tg&usqp=CAU">';
-  } else {
-    div.innerHTML = '<img src="https://media1.giphy.com/media/DYH297XiCS2Ck/200w.gif?cid=6c09b952kzmc1g6eaxfi5f658214wkn6dpgobumtiejkjwph&ep=v1_gifs_search&rid=200w.gif&ct=g">';
-  }
+if (input.value == "Saturday" || input.value == "Thursday") {
+  div.innerHTML =  '<img src="https://media1.giphy.com/media/DYH297XiCS2Ck/200w.gif?cid=6c09b952kzmc1g6eaxfi5f658214wkn6dpgobumtiejkjwph&ep=v1_gifs_search&rid=200w.gif&ct=g">';
+} else if(input.value == "Sunday" || input.value == "Monday" || input.value == "Tuesday" || input.value == "Wennesday" || input.value == "Friday") {
+  div.innerHTML = '<img src="https://www.icegif.com/wp-content/uploads/2023/08/icegif-753.gif">';
+}
 });
+
+
+// const input = document.getElementById('name_n');
+// const button = document.getElementById('tik');
+// button.addEventListener('click', () => {
+//     const name = input.value.trim(); 
+//     let i = 0;
+//     const interval = setInterval(() => {
+//         if (i < name.length) {
+//             console.log(name[i]); 
+//             i++;
+//         } else {
+//             clearInterval(interval); 
+//         }
+//     }, 1000);
+// });

@@ -639,29 +639,28 @@
 
 
 
-// let timer = 0;
-// const startbutton = document.getElementById("start");
-// const topbuttonp = document.getElementById("stop");
-// const p = document.getElementById("timer");
-// let interval;
-// startbutton.addEventListener("click", () => {
-//     interval = setInterval(() => {
-//         timer++;
-//         p.innerText = timer;
-//     }, 50);
-// });
-// stopbutton.addEventListener("click", () => {
-//     clearInterval(interval);
-// });
-
-
-
-const search = document.getElementById('search');
-const info = document.querySelectorAll('#data tr');
-search.addEventListener('input', function() {
-    const axtaris = this.value.toLowerCase();
-    info.forEach(names => {
-        const datalar = names.textContent.toLowerCase();
-        names.style.display = datalar.includes(axtaris) ? '' : 'none';
-    });
+let timer = 0;
+const startbutton = document.getElementById("start");
+const stopbutton = document.getElementById("stop");
+const p = document.getElementById("timer");
+let interval;
+startbutton.addEventListener("click", () => {
+    interval = setInterval(() => {
+        timer++;
+        p.innerText = timer;
+    }, 50);
 });
+stopbutton.addEventListener("click", () => {
+    clearInterval(interval);
+});
+
+
+// const search = document.getElementById('search');
+// const info = document.querySelectorAll('#data tr');
+// search.addEventListener('input', function() {
+//     const axtaris = this.value.toLowerCase();
+//     info.forEach(names => {
+//         const datalar = names.textContent.toLowerCase();
+//         names.style.display = datalar.includes(axtaris) ? '' : 'none';
+//     });
+// });

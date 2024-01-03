@@ -1,0 +1,60 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section>div {
+    width: 300px;
+    height: 200px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: white;
+    margin: 20px auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: white;
+}
+.cut {
+    background-color: purple;
+}
+.tek {
+    background-color: yellow;
+    color: black;
+} */
+
+
+table {
+    width: 800px;
+    margin: 200px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

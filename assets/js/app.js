@@ -588,17 +588,17 @@
 
 
 
-let gif = ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Thursday", "Saturday"];
-let input = document.querySelector("input");
-let div = document.querySelector(".gif_video")
-input.addEventListener("input", () => {
-  console.log(input.value);
-if (input.value == "Saturday" || input.value == "Thursday") {
-  div.innerHTML =  '<img src="https://media1.giphy.com/media/DYH297XiCS2Ck/200w.gif?cid=6c09b952kzmc1g6eaxfi5f658214wkn6dpgobumtiejkjwph&ep=v1_gifs_search&rid=200w.gif&ct=g">';
-} else if(input.value == "Sunday" || input.value == "Monday" || input.value == "Tuesday" || input.value == "Wennesday" || input.value == "Friday") {
-  div.innerHTML = '<img src="https://www.icegif.com/wp-content/uploads/2023/08/icegif-753.gif">';
-}
-});
+// let gif = ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Thursday", "Saturday"];
+// let input = document.querySelector("input");
+// let div = document.querySelector(".gif_video")
+// input.addEventListener("input", () => {
+//   console.log(input.value);
+// if (input.value == "Saturday" || input.value == "Thursday") {
+//   div.innerHTML =  '<img src="https://media1.giphy.com/media/DYH297XiCS2Ck/200w.gif?cid=6c09b952kzmc1g6eaxfi5f658214wkn6dpgobumtiejkjwph&ep=v1_gifs_search&rid=200w.gif&ct=g">';
+// } else if(input.value == "Sunday" || input.value == "Monday" || input.value == "Tuesday" || input.value == "Wennesday" || input.value == "Friday") {
+//   div.innerHTML = '<img src="https://www.icegif.com/wp-content/uploads/2023/08/icegif-753.gif">';
+// }
+// });
 
 
 // const input = document.getElementById('name_n');
@@ -615,3 +615,53 @@ if (input.value == "Saturday" || input.value == "Thursday") {
 //         }
 //     }, 1000);
 // });
+
+
+// let number = [1,2,3,4,5,6,7];
+// number.fill(9);
+// console.log(number);
+
+
+// const input = document.getElementById('name_n');
+// const button = document.getElementById('tik');
+// button.addEventListener('click', () => {
+//     const name = input.value.trim(); 
+//     let i = 0;
+//     const interval = setInterval(() => {
+//         if (i < name.length) {
+//             console.log(name[i]); 
+//             i++;
+//         } else {
+//             clearInterval(interval); 
+//         }
+//     }, 1000);
+// });
+
+
+
+// let timer = 0;
+// const startbutton = document.getElementById("start");
+// const topbuttonp = document.getElementById("stop");
+// const p = document.getElementById("timer");
+// let interval;
+// startbutton.addEventListener("click", () => {
+//     interval = setInterval(() => {
+//         timer++;
+//         p.innerText = timer;
+//     }, 50);
+// });
+// stopbutton.addEventListener("click", () => {
+//     clearInterval(interval);
+// });
+
+
+
+const search = document.getElementById('search');
+const info = document.querySelectorAll('#data tr');
+search.addEventListener('input', function() {
+    const axtaris = this.value.toLowerCase();
+    info.forEach(names => {
+        const datalar = names.textContent.toLowerCase();
+        names.style.display = datalar.includes(axtaris) ? '' : 'none';
+    });
+});
